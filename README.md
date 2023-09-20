@@ -14,20 +14,20 @@ https://www.overleaf.com/read/jpcwpchgmvdx
    ```
 2. Install the latest version of MySQL
    ```
-  sudo sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
-  sudo yum --enablerepo=mysql80-community install mysql-community-server
+   sudo sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
+   sudo yum --enablerepo=mysql80-community install mysql-community-server
    ```
 3. Start the MySQL service
    ```
-  service mysqld start
-  sudo grep "A temporary password" /var/log/mysqld.log
+   service mysqld start
+   sudo grep "A temporary password" /var/log/mysqld.log
    ```
 4. Config the MySQL root user
    ```
-  mysql_secure_installation 
+   mysql_secure_installation 
    ```
 5. Log in to MySQL
    ```
-  mysql -u root -p
+   mysql -u root -p
    ```
 
